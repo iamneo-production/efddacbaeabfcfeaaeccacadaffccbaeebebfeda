@@ -2,12 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Myapp</title>
-  <base href="/">
+  <title>Calory Tracker</title>
+  <link rel="stylesheet" href="styles.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
-</html>
+  </head>
+  <body>
+    <h1 id="headerContainer"> Calory Tracker</h1>
+    <div class="container">
+      <form action="">
+        <label for="searchBox">Search</label><br>
+        <input type="text" id="searchBox" style="width: 30%;"><br><br>
+        </form>
+    </div>
+      <div class="container-const">
+        <div class="div-left">
+      <form action="">
+        <input type="submit" id="newFood" value="Add New Food" ><br><br>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Example Name"><br><br>
+        <label for="calories">Calories</label>
+        <input type="text" id="calories" placeholder="250"><br><br>
+        <label for="image">Image</label>
+        <input type="text" id="image" placeholder="https://imagefinder.co/storage"><br><br>
+      </form>
+      </div>
+      <div class="div-right">
+        <form action="">
+      <label for="name" id="totalCalories">Today's Foods 2102 cal<br> 
+      &#x2022 Apple 81<br>
+      &#x2022 Banana 105x2<br>
+      &#x2022 Dates 228x3<br>
+      &#x2022 Grapes (1cup) 114x3<br>
+      &#x2022 Biscuit 103x5<br>
+      &#x2022 Strawberries 45x6
+      </label><br>  
+    </form>    
+      </div>
+      </div>
+      <div class="selection-const">
+        <div class="const">
+        <form action="">
+          <label for="example">Example Name 250</label><br>
+          <img src="https://somethingaboutsandwiches.com/wp-content/uploads/2022/04/ham-sandwich-1024x1024.jpg" alt="Trulli" style="width: 20%; height: 10%;clip-path: circle(); float:left;">
+          </form>
+          </div>
+          <div class="const1">
+          <form action=""> 
+          <label for="apple">Apple</label><br>
+          <label for="calory">Calory - 81</label><br>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtchbvpDzqdIA9C_wvvQactm9p3ySdVmHGE4YD_Qy3qaEQnElMV8zOxrGYMRlnf4L19Mk&usqp=CAU" alt="Trulli" style="width: 20%; height: 10%;clip-path: circle(); float:left;">
+          <input type="text" id="displayContainer" value="1">
+          <input type="submit" value="Add">
+        </form>
+      </div>
+      <div class="const2">
+        <form action=""> 
+        <label for="Banana">Banana</label><br>
+        <label for="calory">Calory - 105x2</label><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG0V3qrPOf-l3KZU3rHnBwnc1UPpUs46IGb56FuDVlfeNnYdxSXc5YBnCy3DmrsI3pS2Y&usqp=CAU" alt="Trulli" style="width: 30%; height: 30%;clip-path: circle(); float:left;">
+        <input type="text" id="displayContainer" value="1">
+        <input type="submit" value="Add">
+      </form>
+    </div>
+    <div class="const3">
+      <form action=""> 
+      <label for="Dates">Dates</label><br>
+      <label for="calory">Calory - 228x3</label><br>
+      <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/11/medjool-dates-1296x728-header-1296x728.jpg?w=1155&h=1528" alt="Trulli" style="width: 30%; height: 30%;clip-path: circle(); float:left;">
+      <input type="text" id="displayContainer" value="1">
+      <input type="submit" value="Add">
+    </form>
+  </div>
+  <div class="const4">
+    <form action=""> 
+    <label for="Grapes">Grapes</label><br>
+    <label for="calory">Calory - (1cup) 114x3</label><br>
+    <img src="https://media.licdn.com/dms/image/C5612AQEXOR2CR_Ue2A/article-cover_image-shrink_720_1280/0/1520210253173?e=2147483647&v=beta&t=aJ1vv2yIdqCwcoHs4mh-mFnyzIr8LtZbvINlnIzZRfs" alt="Trulli" style="width: 30%; height: 30%;clip-path: circle(); float:left;">
+    <input type="text" id="displayContainer" value="1">
+    <input type="submit" value="Add">
+  </form>
+</div>
+<div class="const5">
+  <form action=""> 
+  <label for="Biscuit">Biscuit</label><br>
+  <label for="calory">Calory - 103x5</label><br>
+  <img src="https://www.biggerbolderbaking.com/wp-content/uploads/2017/02/Digestive-Biscuits-copy-1-500x500.jpg" alt="Trulli" style="width: 20%; height: 10%;clip-path: circle(); float:left;">
+  <input type="text" id="displayContainer" value="1">
+  <input type="submit" value="Add">
+</form>
+</div>
+<div class="const6">
+  <form action=""> 
+  <label for="Strawberries">Strawberries</label><br>
+  <label for="calory">Calory - 45x6</label><br>
+  <img src="https://media.istockphoto.com/id/1313307173/photo/heap-of-fresh-picked-red-strawberries-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=f4SjszAVTQYlv1iktiYhB7kr_Wy6tgRzL5qBoNDEH2k=" alt="Trulli" style="width: 20%; height: 10%;clip-path: circle(); float:left;">
+  <input type="text" id="displayContainer" value="1">
+  <input type="submit" value="Add">
+</form>
+</div>
+</div>
+  </body>
+  </html>
